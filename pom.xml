@@ -53,21 +53,25 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+        <repository>
+            <id>mule-ee-releases</id>
+            <name>MuleSoft Release Repository</name>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/ci-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>mule-ee-snapshots</id>
+            <name>MuleSoft Snapshot Repository</name>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/ci-snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
     <scm>
-        <url>https://github.com/allure-framework/allure-core</url>
-        <connection>scm:git@github.com:allure-framework/allure-core.git</connection>
-        <developerConnection>scm:git:git@github.com:allure-framework/allure-core.git</developerConnection>
+        <connection>scm:git:git://github.com:mulesoft-labs/runtime-manager-allure.git</connection>
+        <developerConnection>scm:git:git@github.com:mulesoft-labs/runtime-manager-allure.git</developerConnection>
+        <url>http://github.com/mulesoft-labs/runtime-manager-allure</url>
     </scm>
-
-    <issueManagement>
-        <system>GitHub Issues</system>
-        <url>https://github.com/allure-framework/allure-core/issues</url>
-    </issueManagement>
-
-    <ciManagement>
-        <system>Jenkins</system>
-        <url>http://ci.qatools.ru/</url>
-    </ciManagement>
 
     <developers>
         <developer>
@@ -89,17 +93,6 @@
             <organization>Yandex</organization>
         </developer>
     </developers>
-
-    <mailingLists>
-        <mailingList>
-            <name>Allure Mailing List</name>
-            <post>allure@yandex-team.ru</post>
-        </mailingList>
-    </mailingLists>
-
-    <prerequisites>
-        <maven>3.0.4</maven>
-    </prerequisites>
 
     <build>
         <pluginManagement>
