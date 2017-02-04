@@ -71,7 +71,7 @@ public class AllureTestListener implements IResultListener, ISuiteListener {
         ).withLabels(
                 AllureModelUtils.createTestFrameworkLabel("TestNG")
         ));
-        addPendingMethods(iTestContext);
+//        addPendingMethods(iTestContext);
     }
 
     @Override
